@@ -3,29 +3,32 @@
 (function() {
   angular
     .module("radio-lab", [
-      "ui-router",
+      "ui.router",
       "songs"
     ])
     .config([
-      "stateProvider",
+      "$stateProvider",
       RouterFunction
     ]);
 
   function RouterFunction($stateProvider) {
     $stateProvider
       .state("welcome", {
-        url: "/welcome",
-        templateUrl: "welcome.html",
-        controller: "",
-        controllerAs: ""
+        url: "",
+        templateUrl: "js/welcome.html",
       })
       .state("songsIndex", {
         url: "/songs",
         templateUrl: "js/songs/index.html",
-        controller: "",
-        controllerAs: ""
+        controller: "SongIndexController",
+        controllerAs: "SongIndexViewModel"
+      })
+      .state("songShow",{
+        url: "/songs/:id",
+        templateUrl: "js/songs/show.html",
+        controller: "SongShowController",
+        controllerAs: "SongShowViewModel"
       });
   }
-
 
 })();

@@ -1,3 +1,5 @@
+Some lab work. Most done through reading or on other terminals. Not many questions at this point. Need to read and review angular over the break.
+
 == README
 
 This README would normally document whatever steps are necessary to get the

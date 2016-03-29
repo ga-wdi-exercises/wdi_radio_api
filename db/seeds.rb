@@ -16,7 +16,7 @@ artists = [
 
 artists.each do |artist|
   # make all the assumptions!
-  results = JSON.parse(HTTParty.get("https://itunes.apple.com/search?term=#{artist}"))["results"];
+  results = JSON.parse(HTTParty.get("http://itunes.apple.com/search?term=#{artist}"))["results"];
   results[0...10].each do |result|
     puts result["trackName"]
     Song.create({

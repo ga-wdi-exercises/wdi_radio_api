@@ -1,6 +1,7 @@
 require 'httparty'
 
 Song.destroy_all
+User.destroy_all
 
 artists = [
   "nosaj+thing",
@@ -28,3 +29,6 @@ artists.each do |artist|
     })
   end
 end
+
+User.create!(email: "bob@example.com", password: "hunter2!")
+User.create!(email: "alice@example.com", password: "hunter3!")

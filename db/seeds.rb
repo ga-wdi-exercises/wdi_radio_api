@@ -22,7 +22,7 @@ artists.each do |artist|
     Song.create({
       title: result["trackName"],
       audio_url: result["previewUrl"],
-      album_art: result["artworkUrl100"],
+      album_art: result["artworkUrl100"].gsub(/100x100/,"400x400"),
       artist: result["artistName"],
       genre: result["primaryGenreName"]
     })

@@ -46,7 +46,7 @@ Song.destroy_all
       audio_url: "http://www.wdidc.org/wdi-radio-lab-assets/mp3/SBTRKT%20-%20Wildfire.mp3",
       album_art: "http://www.wdidc.org/wdi-radio-lab-assets/img/wildfire_sbtrkt.jpeg",
       artist: "sbtrkt",
-      genre: "rock"
+      genre: "Electric"
     })
 
     Song.create({
@@ -54,7 +54,7 @@ Song.destroy_all
       audio_url: "http://www.wdidc.org/wdi-radio-lab-assets/mp3/Alabama%20Shakes%20-%20Hang%20Loose.mp3",
       album_art: "http://www.wdidc.org/wdi-radio-lab-assets/img/hang_loose_alabama_shakes.jpeg",
       artist: "Alabama Shakes",
-      genre: "rock"
+      genre: "Rock"
     })
 
     Song.create({
@@ -62,7 +62,7 @@ Song.destroy_all
       audio_url: "http://www.wdidc.org/wdi-radio-lab-assets/mp3/Jamie%20xx%20-%20Gosh%20%28Official%20Music%20Video%29.mp3",
       album_art: "http://www.wdidc.org/wdi-radio-lab-assets/img/gosh_jamiexx.jpeg",
       artist: "Jamie xx",
-      genre: "rock"
+      genre: "Rock"
     })
 
     Song.create({
@@ -78,5 +78,5 @@ Song.destroy_all
       audio_url: "http://www.wdidc.org/wdi-radio-lab-assets/mp3/Drake%20-%20The%20Motto%20%28Explicit%29%20ft.%20LIL%20WAYNE%2c%20Tyga.mp3",
       album_art: "http://www.wdidc.org/wdi-radio-lab-assets/img/the_motto_drake.png",
       artist: "Drake",
-      genre: "hip hop"
+      genre: "Hip Hop"
     })
